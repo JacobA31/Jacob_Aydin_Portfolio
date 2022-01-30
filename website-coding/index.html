@@ -12,7 +12,9 @@
 }
  body {
      background-color: PeachPuff;
+     font-family: sans-serif;
         }
+        
 .banner{
   width:100%;
   height:100vh;
@@ -108,6 +110,42 @@
       #contact h1{
         text-align:center;
 }
+        .contact-box{
+            width: 500px;
+            box-shadow: 0 0 20px 0 #999;
+            top: 50%;
+            left: 50%
+            transform: translate (-50%, -50%);
+            position: absolute;
+        }
+        form{
+            margin :35px;
+        }
+        .input-field
+        {
+            width:400px;
+            height: 40px;
+            margin-top:20px;
+            padding-left: 10px;
+            border: 1px solid #777;
+            border-radius: 14px;
+            outline:none;
+        }
+        .textarea-field {
+            height: 150px;
+            padding-top:10px;
+        }
+        .btn{
+            border-radius: 20px;
+            color:#fff;
+            margin-top: 18px;
+            padding: 10px;
+            background-colorL #47c35a;
+            font-size: 12px;
+            border:none;
+            cursor: pointer;
+        }
+        
        #contact img {
            float: right;
            margin-left:auto;
@@ -322,9 +360,16 @@
        </div>
       <div id ="contact">
       <h1 class = "heading"> CONTACT </h1>
-      <h3> My email adress --> iaydi1@ocdsb.ca </h3>
-      <h3 a href="https://www.instagram.com/iihsan_aydin/">My instagram @iihsan_aydin<br> https://www.instagram.com/iihsan_aydin/</a> <img src ="my-photo-2.png"></h3>
-       
+        <div class="contact-box">
+            <form>
+                <input type="text" class"input-field" placeholder = "Your Name">
+                <input type="email" class"input-field" placeholder = "Your Email">
+                <input type="text" class"input-field" placeholder = "Subject">
+                <textarea type="text" class"input-field textarea-field" placeholder = "Your message">
+                </textarea>
+                <button type="button" class="btn"> Send Message</button>
+            </form>
+          </div>
        </div>
      
   </body>
